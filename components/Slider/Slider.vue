@@ -123,6 +123,39 @@ export default {
   margin: 3% 0;
 }
 
-.card_description {
+@media (max-width: 800px) {
+  .title {
+    font-size: 40px;
+  }
+
+  .card_title {
+    font-size: 18px;
+  }
+
+  .card_description {
+    font-size: 14px;
+  }
+
+  .description {
+    margin: 0 8%;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards {
+    width: 45%;
+  }
+}
+
+@media (max-width: 450px) {
+  .box {
+    flex-wrap: wrap;
+  }
+
+  .cards {
+    width: 90%;
+    padding: 6%;
+    margin-bottom: 7%;
+  }
 }
 </style>

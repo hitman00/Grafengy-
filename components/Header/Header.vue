@@ -5,6 +5,7 @@
       Grafengy
     </div>
     <div :class="$style.meno">
+      <img src="@/assets/imgs/menobar.png" />
       <ul>
         <li>Home</li>
         <li>About</li>
@@ -74,6 +75,40 @@ export default {
         color: #fff;
       }
     }
+  }
+  img {
+    display: none;
+    width: 25px;
+    float: right;
+    margin-top: 4%;
+    margin-right: 3%;
+  }
+}
+
+@media (max-width: 800px) {
+  .meno {
+    width: 50%;
+    ul {
+      display: none;
+    }
+    img {
+      display: block;
+    }
+  }
+
+  .logo {
+    width: 50%;
+  }
+
+  .logo_img {
+    margin-right: 3%;
+    width: 15%;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo {
+    font-size: 20px;
   }
 }
 </style>

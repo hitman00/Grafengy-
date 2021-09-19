@@ -3,7 +3,7 @@
     <div :class="$style.footer_box">
       <div :class="$style.about_box">
         <div :class="$style.title">About Us</div>
-        <div :class="$style.line"><span></span></div>
+        <div :class="[$style.line, $style.line_fix]"><span></span></div>
         <div :class="$style.description">
           We help non-profits, govermental agencies, ethical businesses and
           research institutes speak directly to their audience with carefully
@@ -141,6 +141,8 @@ export default {
     border-radius: 50px;
     display: block;
   }
+  &.line_fix {
+  }
 }
 
 .description {
@@ -157,5 +159,82 @@ export default {
   margin: 0 auto;
   padding: 1% 0;
   font-size: 18px;
+}
+
+@media (max-width: 800px) {
+  .footer_box {
+    flex-direction: column-reverse;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .link_box {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .line {
+    width: 15px;
+    span {
+      margin-left: 19px;
+      width: 40px;
+    }
+  }
+
+  .about_box {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .line_fix {
+    margin: 1% 0 0 43%;
+  }
+
+  .description {
+    margin-top: 4%;
+    margin-right: 0;
+  }
+
+  .about_box {
+    margin-top: 5%;
+  }
+
+  .social {
+    justify-content: center;
+    margin: 0 25%;
+  }
+
+  .copy_right {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .link_box {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .description {
+    margin-bottom: 2%;
+  }
+
+  .link_slide {
+    width: 90%;
+    margin: 0 auto 5%;
+  }
+
+  .line,
+  .line_fix {
+    display: none;
+  }
+
+  .copy_right {
+    font-size: 15px;
+  }
 }
 </style>

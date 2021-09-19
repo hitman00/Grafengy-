@@ -73,8 +73,44 @@ export default {
   transition: all 0.3s ease;
   cursor: pointer;
   font-weight: 600;
+  color: #fff;
   &:hover {
     opacity: 0.8;
+  }
+}
+
+@media (max-width: 1000px) {
+  .box {
+    width: 60%;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 800px) {
+  .box {
+    position: unset;
+    color: #000;
+    width: 98%;
+    margin: 4% 0;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 15px;
   }
 }
 </style>

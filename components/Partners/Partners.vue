@@ -57,4 +57,16 @@ export default {
     width: 100%;
   }
 }
+
+@media (max-width: 500px) {
+  .box_image {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .social {
+    width: 34%;
+    margin-bottom: 4%;
+  }
+}
 </style>
