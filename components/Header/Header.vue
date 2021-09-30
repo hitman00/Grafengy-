@@ -11,7 +11,7 @@
         <li>About</li>
         <li>Services</li>
         <li>Projects</li>
-        <li>Contact Us</li>
+        <li><a href="https://hitman00.github.io/grafengy/">Github</a></li>
       </ul>
     </div>
   </div>
@@ -70,6 +70,9 @@ export default {
       transition: all 0.3s ease;
       border-radius: 10px;
       font-weight: 500;
+      a {
+        color: #afafaf;
+      }
       &:hover {
         background: #399efc;
         color: #fff;
